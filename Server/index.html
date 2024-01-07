@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>apple data base</title>
+		<link rel="stylesheet" href="./css/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h4 class="product-table center">
+			The Following Tables Were Design To make Dynamic iPhone Page By Inserting
+			Available data Through Form
+		</h4>
+		<hr />
+		<form
+			class="forms"
+			method="POST"
+			action="http://localhost:5000/form"
+			id="productForm"
+		>
+			<h4 class="ms-5 bold">Product Table</h4>
+
+			<!-- Product Name -->
+			<div class="ms-5 my-3">
+				<label for="product_name">Product Name</label>
+				<input
+					name="product_name"
+					type="text"
+					placeholder="Enter Product Name"
+					required
+				/>
+			</div>
+
+			<!-- Product URL -->
+			<div class="ms-5 my-3">
+				<label for="product_url">Product URL</label>
+				<input name="product_url" type="text" placeholder="Enter Product URL" required />
+			</div>
+
+			<h4 class="ms-5 bold">Product Description</h4>
+
+			<!-- Brief Description -->
+			<div class="ms-5 mb-3">
+				<label for="product_brief_description">Product Brief Description</label>
+				<input
+					name="product_brief_description"
+					type="text"
+					placeholder="Product Brief Description"
+					required
+				/>
+			</div>
+
+			<!-- Full Description -->
+			<div class="ms-5 mb-3">
+				<label for="product_description">Product Full Description</label>
+				<input
+					name="product_description"
+					type="text"
+					placeholder="Product Full Description" required
+				/>
+			</div>
+
+			<!-- Product Image -->
+			<div class="ms-5 mb-3">
+				<label for="product_img">Product Image</label>
+				<input name="product_img" type="text" placeholder="Product Image" required/>
+			</div>
+
+			<!-- Product Link -->
+			<div class="ms-5 mb-3">
+				<label for="product_link">Product Link</label>
+				<input name="product_link" type="text" placeholder="Product Link" required/>
+			</div>
+
+			<h4 class="ms-5 bold">Product Price</h4>
+
+			<!-- Starting Price -->
+			<div class="ms-5 mb-3">
+				<label for="starting_price">Starting Price</label>
+				<input
+					name="starting_price"
+					type="number"
+					placeholder="Starting Price" required
+				/>
+			</div>
+
+			<!-- Price Range -->
+			<div class="ms-5 mb-3">
+				<label for="price_range">Price Range</label>
+				<input name="price_range" type="number" placeholder="Price Range" required/>
+			</div>
+
+			<h4 class="ms-5 bold">User</h4>
+
+			<!-- User Name -->
+			<div class="ms-5 mb-3">
+				<label for="user_name">User Name</label>
+				<input name="user_name" type="text" placeholder="User Name" required/>
+			</div>
+
+			<!-- User Password -->
+			<div class="ms-5 mb-3">
+				<label for="user_password">User Password</label>
+				<input
+					name="user_password"
+					type="password"
+					placeholder="User Password" required
+				/>
+			</div>
+
+			<!-- Checkbox -->
+			<div class="ms-5 mb-3">
+				<input type="checkbox" id="formBasicCheckbox" required/>
+				<label for="formBasicCheckbox">Check me out</label>
+			</div>
+            <button class="ms-5 mb-5" type="submit">Submit</button>
+
+
+			
+		</form>
+
+		<script src="js/js.js"></script>
+	</body>
+</html>

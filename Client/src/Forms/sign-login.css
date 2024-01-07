@@ -1,0 +1,56 @@
+.form-section{
+    margin: 150px 120px 20px 130px;
+    /* margin-left: 50px; */
+    
+    background-color: rgb(230, 243, 238);
+    border-radius: 100px;
+}
+.form-wraper{
+    padding-left: 180px;
+}
+.error-message {
+  padding: 10px 10px 10px 40px;
+  background-color: #fff;
+  color: red;
+  margin-top: 10px; 
+  /* margin-left: 150px; */
+  margin-right: 400px;
+}
+input {
+  width: 60%; 
+  padding: 10px;
+  /* margin: 8px 0;  */
+  /* margin-right: 100px; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sign-up-tab{
+    text-decoration: none;
+}
+
+.checkBUtton{
+ 
+  width: auto;
+ 
+}
+link{
+  color: blue;
+}
+.sign-log-forget-tab:hover{
+  color: red;
+}
+.flex-items{
+  display: flex;
+}

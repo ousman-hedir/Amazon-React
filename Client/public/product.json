@@ -1,0 +1,57 @@
+[
+	{
+		"product_name": "Apple Watch",
+		"product_url": "applewatch",
+		"product_brief_description": "Next Level Adventure",
+		"product_description": "Get a $50 Apple Gift Card when you buy Apple Watch Series 9 or Apple Watch SE.*",
+		"product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-watchs9-202311?wid=210&hei=361&fmt=jpeg&qlt=95&.v=1698431456816",
+		"product_link": "https://www.apple.com/watch/",
+		"starting_price": 500,
+		"price_range": 75,
+		"user_name": "ousman"
+	},
+	{
+		"product_name": "Beats",
+		"product_url": "beats",
+		"product_brief_description": "Lots to love. Less to spend.",
+		"product_description": "Get up to a $50 Apple Gift Card when you buy Beats Studio Pro, Beats Solo3 Wireless, Powerbeats Pro, Beats Fit Pro, Beats Studio Buds +, Beats Studio Buds, or Beats Flex.*",
+		"product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-beats-202311?wid=312&hei=334&fmt=png-alpha&.v=1698078843300",
+		"product_link": "https://www.apple.com/iphone-se/",
+		"starting_price": 800,
+		"price_range": 50,
+		"user_name": "ousman"
+	},
+	{
+		"product_name": "Mac",
+		"product_url": "mac",
+		"product_brief_description": "Lots to love. Less to spend.",
+		"product_description": "Get up to a $200 Apple Gift Card when you buy MacBook Air or Mac mini.*",
+		"product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-mac-202311?wid=451&hei=340&fmt=png-alpha&.v=1698078839888",
+		"product_link": "https://www.apple.com/mac/",
+		"starting_price": 2100,
+		"price_range": 80,
+		"user_name": "ousman"
+	},
+	{
+		"product_name": "iPhone 15",
+		"product_url": "iPhone",
+		"product_brief_description": "Pro cameras. Pro display. Pro performance.",
+		"product_description": "Get up to a $75 Apple Gift Card when you buy iPhone 14, iPhone 13, or iPhone SE.*",
+		"product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-iphone-202311?wid=278&hei=376&fmt=png-alpha&.v=1698078837213",
+		"product_link": "https://www.apple.com/iphone-se/",
+		"starting_price": 1150,
+		"price_range": 80,
+		"user_name": "ousman"
+	},
+	{
+		"product_name": "Air Pod",
+		"product_url": "airpod",
+		"product_brief_description": "Lots to love. Less to spend.",
+		"product_description": "Get up to a $75 Apple Gift Card when you buy AirPods (2nd generation), AirPods (3rd generation), AirPods Pro (2nd generation), or AirPods Max.*",
+		"product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ase-header-airpods-202311?wid=302&hei=333&fmt=jpeg&qlt=95&.v=1698078841760",
+		"product_link": "https://www.apple.com/ipad/",
+		"starting_price": 850,
+		"price_range": 850,
+		"user_name": "ousman"
+	}
+]
