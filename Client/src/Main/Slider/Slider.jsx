@@ -56,7 +56,7 @@ const Slider = () => {
 	};
 
 	const handleMouseEnter = () => {
-		setIsSliding(false);
+		// setIsSliding(false);
 	};
 
 	const handleMouseLeave = () => {
@@ -83,29 +83,30 @@ const Slider = () => {
 		setShowThumbnails(!showThumbnails);
 	};
 
+	// ... (previous code)
+
 	useEffect(() => {
 		let interval;
 
 		if (isSliding) {
 			interval = setInterval(() => {
 				setCurrentIndex(
-					(prevIndex) => (prevIndex + 1) 
+					(prevIndex) => (prevIndex + 1)
 				);
 			}, autoplaySpeed);
 		}
 
 		return () => clearInterval(interval);
-	}, [isSliding]);
+	}, [isSliding, autoplaySpeed, duplicatedImages.length]);
+
 
 	useEffect(() => {
 		let imageChangeInterval;
 
 		if (isSliding) {
 			imageChangeInterval = setInterval(() => {
-				setCurrentIndex(
-					(prevIndex) => (prevIndex + 1) 
-				);
-			}, 800); 
+				setCurrentIndex((prevIndex) => prevIndex + 1);
+			}, 800);
 		}
 
 		return () => clearInterval(imageChangeInterval);

@@ -1,44 +1,61 @@
-
+import React, { useState, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import BuyWatchLink from "../../Double_part/Buy-watch-links/Buy_watch_link";
-import React from 'react'
+import Video from "./.eslintrc.cjs";
+import "./FirstSection.css";
+import Logo from "./logo.png";
 
 function FirstSection() {
-  return (
-		<section class="first-hightlight-wrapper">
-			<h3 className="black py-4 bold title-wraper">
-				The Apple Store Shopping Event
-			</h3>
-			<h5 className="video-play black new-alert">
-				Get an Apple Gift Card up to $200 <br /> with your eligible purchase
-			</h5>
-			<h6 className="black MyAdd">Offer starts 11.24</h6>
-			<div class="links-wrapper">
-				<ul>
-					<BuyWatchLink links="#" watch="Get An Early Look" />
-				</ul>
+	const videoRef = useRef(null);
+	const [isPlaying, setIsPlaying] = useState(true);
+
+	const togglePlayPause = () => {
+		const video = videoRef.current;
+		if (video) {
+			if (isPlaying) {
+				video.pause();
+			} else {
+				video.play();
+			}
+			setIsPlaying(!isPlaying);
+		}
+	};
+
+	return (
+		<section className="first-highlight-wrapper">
+			{/* Video Background */}
+			<div className="video-background">
+				<video ref={videoRef} autoPlay="autoplay" muted loop>
+					<source src={Video} type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+				<div className="video-overlay" onClick={togglePlayPause}>
+					{/* Play/Pause icon */}
+					<FontAwesomeIcon
+						icon={isPlaying ? faPause : faPlay}
+						className="play-pause-icon"
+					/>
+				</div>
+			</div>
+
+			{/* Content Overlay */}
+			<div className="content-overlay ">
+				<div className="text-container">
+					<img className="white-img" src={Logo} alt="" />
+
+					<h4 className="video-text">
+						Double Tap. A Magical New Way To Use Apple Watch
+					</h4>
+
+					<div className="links-wrapper">
+						<button className="me-5 white-button">Learn More</button>
+						<button className="white-button">Buy</button>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
 }
 
 export default FirstSection;
-
-// import React from "react";
-// import ForAllParts from "../ForAllParts/ForSingle";
-
-// function FirstSection() {
-// 	return (
-// 		<section class="first-hightlight-wrapper">
-// 			<ForAllParts
-// 				h1="The Apple Store Shopping Event"
-// 				h2="Get an Apple Gift Card up to "
-// 				h22="$200 with your eligible purchase."
-// 				h4="Offer starts 11.24"
-// 				links="#"
-// 				watch="Get An Early Look"
-// 			/>
-// 		</section>
-// 	);
-// }
-
-// export default FirstSection;

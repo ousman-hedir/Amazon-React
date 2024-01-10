@@ -37,7 +37,7 @@ function YouTube() {
 					let videoLink = `https://www.youtube.com/watch?v=${video.id.videoId}`;
 					const truncatedDescription = truncateText(
 						video.snippet.description,
-						50
+						20
 					);
 
 					return (
@@ -46,7 +46,7 @@ function YouTube() {
 							className="youTube-video col-sm-12 col-md-3"
 							style={{
 								boxSizing: "border-box",
-								padding: "15px",
+								padding: "1px",
 								marginBottom: "20px",
 								backgroundColor: "#fff",
 								borderRadius: "8px",
@@ -61,22 +61,39 @@ function YouTube() {
 									alignItems: "center",
 								}}
 							>
-								<img
-									src={video.snippet.thumbnails.high.url}
-									alt={video.snippet.title}
-									className="video-thumbnail"
+								<a
+									href={videoLink}
+									target="_blank"
+									rel="noopener noreferrer"
 									style={{
-										maxWidth: "100%",
-										height: "auto",
-										borderRadius: "6px",
+										display: "inline-block",
+										padding: "8px 15px",
+									
+										
+										textDecoration: "none",
+										
+										transition: "background-color 0.3s",
+										
+										
 									}}
-								/>
+								>
+									<img
+										src={video.snippet.thumbnails.high.url}
+										alt={video.snippet.title}
+										className="video-thumbnail"
+										style={{
+											maxWidth: "100%",
+											height: "auto",
+											borderRadius: "6px",
+										}}
+									/>
+								</a>
 								<h5
 									className="my-2 bolder"
 									style={{
 										margin: "10px 0",
-										fontSize: "1.2rem",
-										color: "#333",
+										fontSize: "1.1rem",
+										color: "#005CC8",
 									}}
 								>
 									{video.snippet.title}
@@ -84,19 +101,12 @@ function YouTube() {
 								<h6
 									style={{
 										color: "#555",
+										fontSize: "14px",
 									}}
 								>
 									{truncatedDescription}
 								</h6>
-								<p
-									style={{
-										marginTop: "15px",
-										color: "#777",
-										fontSize: "15px",
-									}}
-								>
-									Published at: {video.snippet.publishTime}
-								</p>
+
 								<p>
 									<a
 										href={videoLink}
@@ -110,8 +120,8 @@ function YouTube() {
 											textDecoration: "none",
 											borderRadius: "4px",
 											transition: "background-color 0.3s",
-											fontSize: "15px",
-											hover:"#green"
+											fontSize: "12px",
+											hover: "#green",
 										}}
 									>
 										Watch Video

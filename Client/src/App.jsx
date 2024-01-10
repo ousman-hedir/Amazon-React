@@ -26,6 +26,7 @@ function App() {
 				
 				<Route path="/" element={<Main />} />
 				<Route path="/iphone" element={<Iphone />} />
+			
 				<Route path="/iphone/:productLink" element={<SinglePage />} />
 				<Route path="/mac" element={<Mac />} />
 				<Route path="/log-i" element={<LoginForm />} />
