@@ -20,28 +20,3 @@ function SecondSection() {
 }
 
 export default SecondSection;
-
-// import React from "react";
-
-// import ForAllParts from "../ForAllParts/ForSingle";
-// function SecondSection() {
-// 	const h1Style = {
-// 		paddingTop: "10px",
-// 		color: "#ffffff",
-// 	};
-// 	return (
-// 		<section class="second-hightlight-wrapper">
-// 			<ForAllParts
-// 				h1="iPhone 15 Pro"
-// 				h2="Titanium. So strong. So light. So Pro."
-// 				links="#"
-// 				watch="Learn More"
-// 				buyLink="#"
-// 				buy="Buy"
-// 				h1style={h1Style}
-// 			/>
-// 		</section>
-// 	);
-// }
-
-// export default SecondSection;

@@ -1,0 +1,79 @@
+
+.navbar-nav li:hover .sub_group {
+	display: flex;
+    left: 0;
+    right: 0;
+	width: 100vw;
+    margin-left: -100px;
+
+}
+
+.navbar-nav li .sub_group {
+	display: none;
+	position: absolute;
+	top: 100%;
+	
+	background: rgb(22, 22, 23);
+	padding: 0vh 19vw 15vh; 
+	text-align: left;
+	z-index: 1;
+	
+
+}
+
+.navbar-nav li .sub_group .sub-top a {
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(232, 232, 237);
+	display: block;
+	padding:  0 50px; 
+	transition: color 0.3s ease;
+}
+
+.navbar-nav li .sub_group .sub-top a:hover {
+	color: #fff;
+	background-color: rgb(14, 14, 245);
+}
+
+.navbar-nav li .sub_group :nth-child(1) .sub-top a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.navbar-nav li .sub_group .sub-top .title {
+	font-size: 14px;
+	color: rgb(134, 134, 139);
+	margin-left: 13%;
+}
+
+.navbar-nav li .sub_group .sub-top ul {
+	font-size: 16px;
+	list-style: none;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-nav li .sub_group .sub-top ul li {
+	padding: 2px 0;
+	color: #ccc;
+	transition: color 0.3s ease;
+}
+
+.navbar-nav li .sub_group .sub-top ul li:hover {
+	color: #fff;
+}
+
+.navbar-nav li .sub_group::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent rgb(22, 22, 23) transparent;
+}

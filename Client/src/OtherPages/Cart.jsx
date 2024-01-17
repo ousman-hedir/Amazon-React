@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Cart() {
    return (
 			<>
@@ -7,7 +8,7 @@ function Cart() {
 					<div className="not-found-content">
 						<h1>Well Come To Cart Page</h1>
 
-						<p>It is Cart page</p>
+					
 					</div>
 				</div>
 			</>

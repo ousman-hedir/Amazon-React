@@ -1,11 +1,10 @@
 import React from "react";
-
 import Logo from "./logo-sm.png";
 import Search from "./search-icon-sm.png";
 import Cart from "./cart-sm.png";
 import HeaderLists from "./Header_lists";
-
 import { Link } from "react-router-dom";
+import "./Header.css"; 
 
 function Header() {
 	return (
@@ -28,7 +27,6 @@ function Header() {
 						<ul className="navbar-nav nav-justified w-100 nav-fill white">
 							<HeaderLists link="/iphone" text="iphone" />
 							<HeaderLists link="/mac" text="Mac" />
-
 							<HeaderLists link="ipad" text="ipad" />
 							<HeaderLists link="watch" text="watch" />
 							<HeaderLists link="tv" text="tv" />
@@ -39,7 +37,6 @@ function Header() {
 							<Link className="me-2 mx-auto log-in text-white" to="log-in">
 								Login
 							</Link>
-							
 						</ul>
 					</div>
 				</nav>

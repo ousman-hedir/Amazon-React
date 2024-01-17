@@ -66,11 +66,7 @@ function IPhone() {
 										With The price of $ {item.starting_price} at a range of $
 										{item.price_range}
 									</h6>
-									<Link to={`/iphone/${item.product_url}`}>
-										<button className="btn btn-primary mb-5">
-											Explore More
-										</button>
-									</Link>
+									
 
 									<Link to={`/iphone/${item.product_url}`}>
 										<button className="btn btn-primary mb-5">

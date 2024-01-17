@@ -344,7 +344,7 @@ function Footer() {
 				<h6 className="ms-5">
 					Dev by
 					<strong className="ps-2">
-						<a href="https://ousmanhedir.com.et/">Ousman Hedir</a>
+						<a href="https://ousman24.netlify.app/">Ousman Hedir</a>
 					</strong>
 				</h6>
 			</div>

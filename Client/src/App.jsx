@@ -17,34 +17,33 @@ import Tv from "./OtherPages/Tv";
 import Music from "./OtherPages/Music";
 import Ipad from "./OtherPages/Ipad";
 import Footer from "./Footer/Footer";
+import IPhone from "./Iphone/Iphone";
 
 function App() {
 	return (
 		<>
-		<Header/>
+			<Header />
 			<Routes>
-				
 				<Route path="/" element={<Main />} />
 				<Route path="/iphone" element={<Iphone />} />
-			
+
 				<Route path="/iphone/:productLink" element={<SinglePage />} />
-				<Route path="/mac" element={<Mac />} />
+				<Route path="/mac" element={<IPhone />} />
 				<Route path="/log-i" element={<LoginForm />} />
 				<Route path="/signU" element={<SignupForm />} />
 				<Route path="/DataSummit" element={<DataSummit />} />
-				<Route path="/cart" element={<Cart />} />
-				<Route path="/music" element={<Music />} />
-				<Route path="/tv" element={<Tv />} />
-				<Route path="/support" element={<Support />} />
-				<Route path="/watch" element={<Watch />} />
-				<Route path="/ipad" element={<Ipad />} />
+				<Route path="/cart" element={<IPhone />} />
+				<Route path="/music" element={<IPhone />} />
+				<Route path="/tv" element={<IPhone />} />
+				<Route path="/support" element={<IPhone />} />
+				<Route path="/watch" element={<IPhone />} />
+				<Route path="/ipad" element={<IPhone />} />
 
 				<Route path="/signUp/:DataSummit" element={<DataSummit />} />
 
 				<Route path="*" element={<NotFound />} />
-		
 			</Routes>
-			<Footer/>
+			<Footer />
 		</>
 	);
 }
